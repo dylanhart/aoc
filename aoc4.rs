@@ -23,8 +23,8 @@ fn main() {
                 continue 'outer;
             } else if d == last {
                 run += 1;
-            } else {
                 long = true;
+            } else {
                 if run == 1 {
                     double = true;
                 }
