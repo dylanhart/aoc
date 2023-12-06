@@ -178,7 +178,7 @@ fn main() {
     ranges.sort_by_key(|r| r.start);
     println!("seeds: {ranges:?}");
     for (i, map) in maps.iter().enumerate() {
-        println!("map: {map:?}");
+        // println!("map: {map:?}");
         ranges = ranges.into_iter()
             .flat_map(|mut r| {
                 let mut ranges = Vec::new();
@@ -196,7 +196,7 @@ fn main() {
             })
             .collect();
         ranges.sort_by_key(|r| r.start);
-        println!("{i}: {ranges:?}");
+        // println!("{i}: {ranges:?}");
     }
     let min =  ranges.first().unwrap().start;
     println!("p2: {min}");
